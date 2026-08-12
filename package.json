@@ -1,0 +1,16 @@
+{
+  "name": "aws-course-w0-kit",
+  "version": "0.1.0",
+  "description": "六角學院 AWS 雲端課程 W0 預習任務驗收工具",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0"
+  },
+  "scripts": {
+    "check:docker": "node docker-check.mjs",
+    "linux": "node linux-shell.mjs",
+    "status": "node w0-status.mjs"
+  }
+}
