@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 
-export { isSafeVolumeName, isVolumeId, linuxCheckIds } from './linux-live-check.mjs'
+// 舊三關的 Volume 檢查符號請直接 import './linux-live-check.mjs'。
+// 這裡不再 re-export：那會讓學生包被迫夾帶整支 linux-live-check.mjs（W0 用不到）。
 
 export const resultSchemaVersion = 2
 export const accountCheckerVersion = 'w0-account-check-v4'

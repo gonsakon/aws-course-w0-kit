@@ -25,7 +25,7 @@ docker --version
 
 任務一（AWS 帳號）不經 kit 驗收：依任務卡拍兩張截圖（Console 東京首頁＋Authenticator 的 AWS 條目）。
 
-每個指令都會先檢查 Node.js 版本。若顯示 `NODE_VERSION_UNSUPPORTED`，任務尚未執行；請依 `resources.md` 升級至 v24 LTS（或仍受支援的 v22 LTS），關閉並重開終端機後再試。
+每個指令都會先檢查 Node.js 版本。若顯示 `NODE_VERSION_UNSUPPORTED`，任務尚未執行；請升級至 v24 LTS（或仍受支援的 v22 LTS），關閉並重開終端機後再試。
 
 如果 Windows PowerShell 顯示「無法載入 `npm.ps1`，因為此系統已停用指令碼執行」，不需要修改系統的 Execution Policy；把指令開頭的 `npm` 改成 `npm.cmd` 即可，例如：
 
