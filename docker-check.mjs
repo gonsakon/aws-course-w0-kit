@@ -9,9 +9,7 @@ import { assertSupportedNodeVersion } from './runtime-version.mjs'
 
 assertSupportedNodeVersion()
 
-// T2 環境驗收，三段：daemon 活著 → 容器起得來 → /postbox 有簽到檔。
-// 簽到檔（2026-08-12 老闆定案）＝學生真的在 Linux 裡下過指令的程式實證；
-// 打招呼指令本身仍不驗——招呼是體驗不是成績（w0-video-plan 定案）。
+// 三段檢查：daemon 活著 → 容器起得來 → /postbox 有簽到檔。
 
 const image = 'ubuntu:24.04'
 const resultPath = '.w0-results/docker.json'
@@ -70,7 +68,7 @@ const postbox = runDocker(
     '-v',
     `${postboxVolume}:/postbox`,
     image,
-    // -s＝檔案存在且非空（2026-08-12 老闆規格：要有檔、裡面要有字）
+    // -s＝檔案存在且非空
     'test',
     '-s',
     '/postbox/hello.txt',
